@@ -1,0 +1,169 @@
+/* Общие стили для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Общая анимация для всех элементов */
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeInUp 1s forwards;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #25D366;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 10%;
+  animation: fadeInUp 1.5s forwards;
+}
+
+.hero img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #25D366;
+  margin-bottom: 20px;
+}
+
+.projects {
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  animation: fadeInUp 1.8s forwards;
+}
+
+.project {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.contact {
+  text-align: center;
+  padding: 80px 10%;
+  animation: fadeInUp 2s forwards;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.telegram {
+  background: #0088cc;
+}
+
+.btn i {
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #777;
+}
+
+/* Стили для кнопки с изображением */
+.project a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.project .round-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.contact .social-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.social-btn .fab {
+  margin-right: 10px;
+}
+
+/* Стили для заголовка "Мои работы" */
+.my-works {
+  text-align: center;
+  padding: 40px 10%;
+  animation: fadeInUp 1.7s forwards;
+}
+
+.my-works h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
